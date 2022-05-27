@@ -2,8 +2,8 @@
 StackExchange.Redis 套件使用測試程式碼
 
 前置作業：
-創建Postgre 資料庫
-創建Redis 資料庫
+- 創建Postgre 資料庫
+- 創建Redis 資料庫
 
 需要設定：
 - appsetting :
