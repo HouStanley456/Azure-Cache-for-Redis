@@ -12,3 +12,6 @@ Redis的連接字串
 Postgre的連線字串
 - RedisTestRepository :
 Postgres -> 要查詢的SQL語法
+
+學習筆記：
+https://hackmd.io/@StanleyHou/HJXYOkqPq
