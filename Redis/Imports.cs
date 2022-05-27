@@ -1,0 +1,11 @@
+﻿global using Microsoft.AspNetCore.Mvc;
+global using Newtonsoft.Json;
+global using Redis.Request;
+global using Redis.Services;
+global using Redis.ViewModel;
+global using StackExchange.Redis;
+global using System.Configuration;
+global using Redis.Repository;
+global using Npgsql;
+global using Dapper;
+global using System.Linq;
