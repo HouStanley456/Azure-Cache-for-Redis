@@ -1,5 +1,5 @@
-# Azure-Cache-for-Redis-
-- StackExchange.Redis 套件使用測試程式碼 -
+# Azure-Cache-for-Redis
+StackExchange.Redis 套件使用測試程式碼
 
 前置作業：
 創建Postgre 資料庫
