@@ -1,6 +1,6 @@
 # Azure-Cache-for-Redis
-Asp.Net core
-StackExchange.Redis 套件使用測試程式碼
+- Asp.Net core
+- StackExchange.Redis 套件使用測試程式碼
 
 前置作業：
 - 創建Postgre 資料庫
