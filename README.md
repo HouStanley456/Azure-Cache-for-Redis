@@ -1,4 +1,5 @@
 # Azure-Cache-for-Redis
+Asp.Net core
 StackExchange.Redis 套件使用測試程式碼
 
 前置作業：
