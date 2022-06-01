@@ -24,7 +24,7 @@ public class RedisTestService
         // }
 
         List<RedisListVM> RedisRecordList = new();
-        // 要把request序列化 不然會被判定為同一個RedisDbname
+        // 要把request序列化 不然會被判定為同一個RedisKeyname
         string RedisKeyName = $"{JsonConvert.SerializeObject(request)}";
         Console.WriteLine(JsonConvert.SerializeObject(request));
         var cachedDeviceRecord = cache.StringGet(RedisKeyName);
