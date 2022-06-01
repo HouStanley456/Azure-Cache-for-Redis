@@ -25,9 +25,9 @@ public class RedisTestService
 
         List<RedisListVM> RedisRecordList = new();
         // 要把request序列化 不然會被判定為同一個RedisDbname
-        string RedisDbName = $"{JsonConvert.SerializeObject(request)}";
+        string RedisKeyName = $"{JsonConvert.SerializeObject(request)}";
         Console.WriteLine(JsonConvert.SerializeObject(request));
-        var cachedDeviceRecord = cache.StringGet(RedisDbName);
+        var cachedDeviceRecord = cache.StringGet(RedisKeyName);
         if (!string.IsNullOrEmpty(cachedDeviceRecord))
         {
             Console.WriteLine("有跑進Redis呦");
@@ -51,7 +51,7 @@ public class RedisTestService
             }).ToList();
 
             RedisRecordList = result;
-            cache.StringSet(RedisDbName, JsonConvert.SerializeObject(RedisRecordList), saveTime);
+            cache.StringSet(RedisKeyName, JsonConvert.SerializeObject(RedisRecordList), saveTime);
 
             return RedisRecordList;
         }
